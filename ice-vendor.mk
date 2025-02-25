@@ -808,7 +808,6 @@ PRODUCT_PACKAGES += \
     libSNPE_G \
     libStarMode \
     libSuperRaw \
-    libSuperTextWrapper \
     libTrafficMode \
     libVDBayerHDR \
     libVDBlurless \
@@ -871,7 +870,6 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libgf_hal_G3 \
     libhta \
-    libhwconfigurationutil \
     libhyperlapse \
     libml_util \
     libmotionblur \
@@ -893,8 +891,6 @@ PRODUCT_PACKAGES += \
     libstface_fd_api \
     libstfd_mobile_api \
     libtriplecam_image_optical_zoom \
-    libtriplecam_optical_zoom_control \
-    libtriplecam_video_optical_zoom \
     libwatermark_photo \
     vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
@@ -918,10 +914,10 @@ PRODUCT_PACKAGES += \
     libarcsoft_portraitSN_hvx_skel \
     libarcsoft_portraitsn_hvx_skel_21603 \
     libc++.so \
+    libQnnHtpStub \
     libc++abi.so \
     libcalculator_domains_skel \
     libcalculator_skel \
-    libhdr_skel \
     libhvxFaceBeautyPre_skel \
     libktvdrc \
     libktveffect \
@@ -941,7 +937,6 @@ PRODUCT_PACKAGES += \
     libvdblurless_4.6.10P_skel \
     libvdblurless_skel \
     libvdsuperphoto_skel \
-    libworker_pool \
     manifest_oplus_fingerprint.xml \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     init.oplus.fingerprints
