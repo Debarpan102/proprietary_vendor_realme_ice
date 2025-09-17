@@ -725,7 +725,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libcom.qti.chinodeutils \
     libcvface_api \
-    libhwconfigurationutil \
     libipebpsstriping \
     libipebpsstriping170 \
     libjpege \
@@ -755,8 +754,6 @@ PRODUCT_PACKAGES += \
     libsynx \
     libtfestriping \
     libthreadutils \
-    libtriplecam_optical_zoom_control \
-    libtriplecam_video_optical_zoom \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.osense.client-V1-ndk_platform \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -803,6 +800,7 @@ PRODUCT_PACKAGES += \
     libPerfectlyClearCruxOpt \
     libPolarrRender \
     libPreviewDecisionOld \
+    libQnnHtpStub \
     libRedeyeReduce \
     libSNPE \
     libSNPE_G \
@@ -870,6 +868,7 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libgf_hal_G3 \
     libhta \
+    libhwconfigurationutil \
     libhyperlapse \
     libml_util \
     libmotionblur \
@@ -891,10 +890,11 @@ PRODUCT_PACKAGES += \
     libstface_fd_api \
     libstfd_mobile_api \
     libtriplecam_image_optical_zoom \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
     libwatermark_photo \
     vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
-    vendor.oplus.hardware.olc2-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
     libQnnHtpAltPrepSkelodm_aiboost \
@@ -914,7 +914,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_portraitSN_hvx_skel \
     libarcsoft_portraitsn_hvx_skel_21603 \
     libc++.so \
-    libQnnHtpStub \
     libc++abi.so \
     libcalculator_domains_skel \
     libcalculator_skel \
