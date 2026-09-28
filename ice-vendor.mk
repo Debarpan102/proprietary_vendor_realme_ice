@@ -893,50 +893,49 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
-    libQnnHtpAltPrepSkelodm_aiboost \
-    libQnnHtpSkelodm_aiboost \
-    libaiboostubwc_skel \
-    libQnnHtp \
-    libQnnHtpAltPrepSkel \
-    libQnnHtpSkel \
-    libVDHexagonBlurless_v2_skel \
-    libaiboost_skel \
-    libaiboost_skel_v65 \
-    libaiboost_skel_v66 \
-    libarcsoft_dualcam_refocus_5221_skel \
-    libarcsoft_dualcam_refocus_skel \
-    libarcsoft_hdrplus_hvx_skel \
-    libarcsoft_hdrplus_hvx_skel_21603 \
-    libarcsoft_portraitSN_hvx_skel \
-    libarcsoft_portraitsn_hvx_skel_21603 \
-    libc++.so \
-    libc++abi.so \
-    libcalculator_domains_skel \
-    libcalculator_skel \
-    libhvxFaceBeautyPre_skel \
-    libktvdrc \
-    libktveffect \
-    libktveq \
-    libktvns \
-    libktvpitchshift \
-    libktvreverb \
-    libktvvolume \
-    libsnpe_dsp_domains_skel \
-    libsnpe_dsp_skel \
-    libsnpe_dsp_v65_domains_v2_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsnpe_dsp_v68_domains_v3_skel \
-    libsnpe_htp_v65_skel \
-    libsnpe_htp_v66_skel \
-    libsnpe_htp_v68_skel \
-    libvdblurless_4.6.10P_skel \
-    libvdblurless_skel \
-    libvdsuperphoto_skel \
+    odm_lib_rfsa_adsp_aiboost_libQnnHtpAltPrepSkel_so \
+    odm_lib_rfsa_adsp_aiboost_libQnnHtpSkel_so \
+    odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
+    odm_lib_rfsa_adsp_libQnnHtp_so \
+    odm_lib_rfsa_adsp_libQnnHtpAltPrepSkel_so \
+    odm_lib_rfsa_adsp_libQnnHtpSkel_so \
+    odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
+    odm_lib_rfsa_adsp_libaiboost_skel_so \
+    odm_lib_rfsa_adsp_libaiboost_skel_v65_so \
+    odm_lib_rfsa_adsp_libaiboost_skel_v66_so \
+    odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_5221_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_21603_so \
+    odm_lib_rfsa_adsp_libarcsoft_portraitSN_hvx_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_portraitsn_hvx_skel_21603_so \
+    odm_lib_rfsa_adsp_libc++_so_1 \
+    odm_lib_rfsa_adsp_libc++abi_so_1 \
+    odm_lib_rfsa_adsp_libcalculator_domains_skel_so \
+    odm_lib_rfsa_adsp_libcalculator_skel_so \
+    odm_lib_rfsa_adsp_libhvxFaceBeautyPre_skel_so \
+    odm_lib_rfsa_adsp_libktvdrc_so \
+    odm_lib_rfsa_adsp_libktveffect_so \
+    odm_lib_rfsa_adsp_libktveq_so \
+    odm_lib_rfsa_adsp_libktvns_so \
+    odm_lib_rfsa_adsp_libktvpitchshift_so \
+    odm_lib_rfsa_adsp_libktvreverb_so \
+    odm_lib_rfsa_adsp_libktvvolume_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_domains_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_htp_v65_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_htp_v66_skel_so \
+    odm_lib_rfsa_adsp_libsnpe_htp_v68_skel_so \
+    odm_lib_rfsa_adsp_libvdblurless_4_6_10P_skel_so \
+    odm_lib_rfsa_adsp_libvdblurless_skel_so \
+    odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
     manifest_oplus_fingerprint.xml \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     init.oplus.fingerprints
