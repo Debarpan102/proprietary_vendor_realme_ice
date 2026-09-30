@@ -755,7 +755,6 @@ PRODUCT_PACKAGES += \
     libtfestriping \
     libthreadutils \
     vendor.oplus.hardware.cammidasservice@1.0 \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     libDeVIS \
     liblvimfs \
