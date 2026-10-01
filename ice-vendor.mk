@@ -892,7 +892,6 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
-    vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
