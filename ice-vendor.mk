@@ -894,7 +894,6 @@ PRODUCT_PACKAGES += \
     libwatermark_photo \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpAltPrepSkel_so \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpSkel_so \
     odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
