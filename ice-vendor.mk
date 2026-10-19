@@ -873,7 +873,6 @@ PRODUCT_PACKAGES += \
     libmotionblur \
     libmpbase \
     libolc_vnd \
-    libop-ai-beauty-body-detection \
     libop-ai-beauty-faceretouch-cn \
     libormshalclient \
     libosenseaidlhalclient \
