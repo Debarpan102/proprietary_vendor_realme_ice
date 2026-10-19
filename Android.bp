@@ -4222,6 +4222,44 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamera2ndk_vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamera2ndk_vendor.so",
+            ],
+            shared_libs: [
+                "libfmq",
+                "libhidlbase",
+                "libhardware",
+                "libnativewindow",
+                "liblog",
+                "libutils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libcamera_metadata",
+                "libmediandk",
+                "android.frameworks.cameraservice.device@2.0",
+                "android.frameworks.cameraservice.common@2.0",
+                "android.frameworks.cameraservice.service@2.0",
+                "android.frameworks.cameraservice.service@2.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcamera_nn_stub",
     owner: "realme",
     strip: {
@@ -9473,6 +9511,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstfaceunlockocl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libstfaceunlockocl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libOpenCL",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstfd_mobile_api",
     owner: "realme",
     strip: {
@@ -10008,11 +10071,67 @@ prebuilt_rfsa {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_oplus_face.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_face.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_oplus_fingerprint.xml",
     owner: "realme",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.biometrics.face@1.0-service",
+    owner: "realme",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "libbinder",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libbase",
+                "libcamera2ndk_vendor",
+                "libmediandk",
+                "libnativewindow",
+                "libui",
+                "libbinder_ndk",
+                "android.hardware.biometrics.face-V1-ndk",
+                "android.hardware.biometrics.common-V1-ndk",
+                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+                "libosenseaidlhalclient",
+                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
+                "libstfaceunlockocl",
+                "libion",
+                "libQSEEComAPI",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
     device_specific: true,
 }
 

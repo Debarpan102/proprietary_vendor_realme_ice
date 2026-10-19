@@ -484,6 +484,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/realme/ice/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/realme/ice/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/realme/ice/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
     vendor/realme/ice/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/ice/proprietary/odm/etc/lvimfs_params/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVACFS_Configuration.txt \
     vendor/realme/ice/proprietary/odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat \
@@ -524,6 +525,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/firmware/tp/21643/FW_NF_ILI7807S_DSJM.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21643/FW_NF_ILI7807S_DSJM.img \
     vendor/realme/ice/proprietary/odm/firmware/tp/21643/FW_NF_ILI7807S_DSJM_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21643/FW_NF_ILI7807S_DSJM_FAE.img \
     vendor/realme/ice/proprietary/odm/firmware/tp/21643/LIMIT_NF_ILI7807S_DSJM.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21643/LIMIT_NF_ILI7807S_DSJM.img \
+    vendor/realme/ice/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
     vendor/realme/ice/proprietary/odm/lib64/camera/com.qti.sensormodule.cxt_gc02m1b.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.cxt_gc02m1b.bin \
     vendor/realme/ice/proprietary/odm/lib64/camera/com.qti.sensormodule.holitech_gc02m1.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.holitech_gc02m1.bin \
     vendor/realme/ice/proprietary/odm/lib64/camera/com.qti.sensormodule.sm7325_s5kgm1st_qtech.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.sm7325_s5kgm1st_qtech.bin \
@@ -533,6 +535,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/lib64/camera/com.qti.tuned.sm7325_s5kgm1st_qtech.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm7325_s5kgm1st_qtech.bin \
     vendor/realme/ice/proprietary/odm/lib64/camera/com.qti.tuned.sunny_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sunny_imx471.bin \
     vendor/realme/ice/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b00 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b01 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b02 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b03 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b04 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b05 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b06 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b07 \
+    vendor/realme/ice/proprietary/odm/vendor/firmware/facereg.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.mdt \
     vendor/realme/ice/proprietary/odm/vendor/firmware/sileadta.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b00 \
     vendor/realme/ice/proprietary/odm/vendor/firmware/sileadta.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b01 \
     vendor/realme/ice/proprietary/odm/vendor/firmware/sileadta.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b02 \
@@ -710,6 +721,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_triple_zoomtranslator \
     libbitmlengine \
     libbitmlenginev2 \
+    libcamera2ndk_vendor \
     libcamera_nn_stub \
     libcamerapostproc \
     libcamxfacialfeatures \
@@ -886,6 +898,7 @@ PRODUCT_PACKAGES += \
     libstblur_api \
     libstblur_capture_api \
     libstface_fd_api \
+    libstfaceunlockocl \
     libstfd_mobile_api \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
@@ -932,6 +945,8 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libvdblurless_4_6_10P_skel_so \
     odm_lib_rfsa_adsp_libvdblurless_skel_so \
     odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
+    manifest_oplus_face.xml \
     manifest_oplus_fingerprint.xml \
+    vendor.oplus.hardware.biometrics.face@1.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     init.oplus.fingerprints
