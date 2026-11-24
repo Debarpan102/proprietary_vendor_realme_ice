@@ -811,6 +811,7 @@ PRODUCT_PACKAGES += \
     libPerfectlyClearCruxOpt \
     libPolarrRender \
     libPreviewDecisionOld \
+    libQnnHtpAltPrepStub \
     libQnnHtpStub \
     libRedeyeReduce \
     libSNPE \
@@ -842,6 +843,7 @@ PRODUCT_PACKAGES += \
     libapsdarksight \
     libapsexif \
     libapsjpeg \
+    libarc.ion \
     libarcsoft_aicolor_image \
     libarcsoft_aicolor_video \
     libarcsoft_distortion_correction \
@@ -849,7 +851,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_dualcam_refocus_left \
     libarcsoft_dualcam_refocus_preview \
     libarcsoft_dualcam_refocus_uw \
-    libarc.ion \
     libarcsoft_frc \
     libarcsoft_hdr_couple_api \
     libarcsoft_hdr_couple_api_V2 \

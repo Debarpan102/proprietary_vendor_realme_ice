@@ -7286,6 +7286,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libQnnHtpAltPrepStub",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libQnnHtpAltPrepStub.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libQnnHtpStub",
     owner: "realme",
     strip: {
@@ -8054,6 +8079,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarc.ion",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libarc.ion.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libdmabufheap",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_aicolor_image",
     owner: "realme",
     strip: {
@@ -8166,13 +8219,13 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_left.so",
             ],
             shared_libs: [
+                "libz",
+                "libarcsoft_qnnhtp",
+                "libcdsprpc",
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
-                "libcdsprpc",
-                "libarc.ion",
-                "libarcsoft_qnnhtp",
-                "libz",
                 "libm",
                 "libdl",
             ],
@@ -8195,38 +8248,12 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_preview.so",
             ],
             shared_libs: [
-                "libcdsprpc",
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
                 "libm",
-                "libarc.ion",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarc.ion",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libarc.ion.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libdmabufheap",
-                "libc++",
             ],
         },
     },
@@ -8247,13 +8274,13 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_uw.so",
             ],
             shared_libs: [
+                "libz",
+                "libarcsoft_qnnhtp",
+                "libcdsprpc",
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
-                "libz",
-                "libcdsprpc",
-                "libarc.ion",
-                "libarcsoft_qnnhtp",
                 "libm",
                 "libdl",
             ],
