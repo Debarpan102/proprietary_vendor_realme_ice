@@ -131,6 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/ByW7g4bbf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByW7g4bbf \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByYo3If \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BycYf7WWz \
+    vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Cold.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Emerald.cube.rgb.bin \
@@ -152,11 +153,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/Sy4uLSTgf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Sy4uLSTgf \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/Syt2KeZZf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Syt2KeZZf \
+    vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/Texture-70.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Texture-70.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin \
+    vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/White.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/White.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin \
     vendor/realme/ice/proprietary/odm/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/black_gold.bin \
@@ -554,6 +557,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/ice/proprietary/odm/vendor/firmware/sileadta.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b07 \
     vendor/realme/ice/proprietary/odm/vendor/firmware/sileadta.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.mdt \
     vendor/realme/ice/proprietary/vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/GreenLut:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/GreenLut \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab0:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab0 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab1:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab1 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab2:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab2 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab3:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab3 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab4:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab4 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab5:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab5 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/colorTab6:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/colorTab6 \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/faceLut:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/faceLut \
+    vendor/realme/ice/proprietary/vendor/etc/colorLuts/frontLut:$(TARGET_COPY_OUT_VENDOR)/etc/colorLuts/frontLut \
     vendor/realme/ice/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/realme/ice/proprietary/vendor/etc/ltm_config_21643_ds_ili7807s_fhd_tft_lcd_panel_with_dsc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_21643_ds_ili7807s_fhd_tft_lcd_panel_with_dsc.xml \
     vendor/realme/ice/proprietary/vendor/etc/qdcm_calib_data_21643_ds_ili7807s_fhd_tft_lcd_panel_with_dsc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_21643_ds_ili7807s_fhd_tft_lcd_panel_with_dsc.xml \
